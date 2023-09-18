@@ -14,11 +14,25 @@
 }
 
 .square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: calc(100% / 10);
   aspect-ratio: 1 / 1;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
   border: 2px solid white;
+}
+
+.square span{
+  display: none;
 }
 
 .square.clicked{
   background-color: aquamarine;
+}
+
+.square.clicked span{
+  display: block;
 }
