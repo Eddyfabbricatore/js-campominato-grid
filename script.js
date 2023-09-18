@@ -16,7 +16,7 @@ const btn = document.querySelector('#btn-1');
 
 reset();
 
-container.innerHTML = 'Clicca il bottone per iniziare a giocare';
+container.innerHTML = 'Clicca il bottone Play per iniziare a giocare';
 
 // 7. Listener btn
 btn.addEventListener('click', function(){
