@@ -4,15 +4,26 @@
   3. Aggiungere un listener al 'click' ad ogni quadrato
   4. Al 'click' fare un toggle della classe 'clicked'
   5. Fare un append del quadrato al container
+  6. Salvare il bottone
+  7. Aggiungere al listener la function init()
 */
 
 
 // 1. Salvo il container in una variabile
 const container = document.querySelector('.container-custom');
+// 6. Salvo il btn
+const btn = document.querySelector('#btn-1');
 
 reset();
 
-init();
+container.innerHTML = 'Clicca il bottone per iniziare a giocare';
+
+// 7. Listener btn
+btn.addEventListener('click', function(){
+  reset();
+
+  init();
+});
 
 
 /* function */
